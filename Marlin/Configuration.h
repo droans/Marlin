@@ -557,25 +557,25 @@
 // SET BY MICHAEL CARROLL
 //UNCOMMENT WHEN MICRO SWISS INSTALLED
 
-//#define HEATER_0_MAXTEMP 295
-//#define HEATER_1_MAXTEMP 295
-//#define HEATER_2_MAXTEMP 295
-//#define HEATER_3_MAXTEMP 295
-//#define HEATER_4_MAXTEMP 295
-//#define HEATER_5_MAXTEMP 295
-//#define HEATER_6_MAXTEMP 295
-//#define HEATER_7_MAXTEMP 295
+#define HEATER_0_MAXTEMP 295
+#define HEATER_1_MAXTEMP 295
+#define HEATER_2_MAXTEMP 295
+#define HEATER_3_MAXTEMP 295
+#define HEATER_4_MAXTEMP 295
+#define HEATER_5_MAXTEMP 295
+#define HEATER_6_MAXTEMP 295
+#define HEATER_7_MAXTEMP 295
 
-#define HEATER_0_MAXTEMP 275
-#define HEATER_1_MAXTEMP 275
-#define HEATER_2_MAXTEMP 275
-#define HEATER_3_MAXTEMP 275
-#define HEATER_4_MAXTEMP 275
-#define HEATER_5_MAXTEMP 275
-#define HEATER_6_MAXTEMP 275
-#define HEATER_7_MAXTEMP 275
-#define BED_MAXTEMP      120
-#define CHAMBER_MAXTEMP  60
+//#define HEATER_0_MAXTEMP 275
+//#define HEATER_1_MAXTEMP 275
+//#define HEATER_2_MAXTEMP 275
+//#define HEATER_3_MAXTEMP 275
+//#define HEATER_4_MAXTEMP 275
+// #define HEATER_5_MAXTEMP 275
+// #define HEATER_6_MAXTEMP 275
+// #define HEATER_7_MAXTEMP 275
+ #define BED_MAXTEMP      120
+// #define CHAMBER_MAXTEMP  60
 
 /**
  * Thermal Overshoot
@@ -927,7 +927,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 130 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1182,9 +1182,9 @@
 
 // SET BY MICHAEL CARROLL
 //UNCOMMENT WHEN MICRO SWISS INSTALLED
-//#define NOZZLE_TO_PROBE_OFFSET { -45.15, -8.28, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -45.15, -8.28, 0 }
 
-#define NOZZLE_TO_PROBE_OFFSET { -44, -7, 0 }
+//#define NOZZLE_TO_PROBE_OFFSET { -44, -7, 0 }
 
 //#define NOZZLE_TO_PROBE_OFFSET { -44, -7, 0 }
 
@@ -1382,11 +1382,11 @@
 // Travel limits (mm) after homing, corresponding to endstop positions.
 // SET BY MICHAEL CARROLL
 // UNCOMMENT WHEN MICRO SWISS INSTALLED
-//#define X_MIN_POS -10
-//#define Y_MIN_POS -10
+#define X_MIN_POS -5
+#define Y_MIN_POS -10
 
-#define X_MIN_POS 0
-#define Y_MIN_POS 0
+// #define X_MIN_POS 0
+// #define Y_MIN_POS 0
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE + 15 // Extended max to allow the probe to reach more of the bed.
 #define Y_MAX_POS Y_BED_SIZE
@@ -1648,7 +1648,7 @@
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
   #define MESH_INSET 10              // Set Mesh bounds as an inset region of the bed
-  #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
+  #define GRID_MAX_POINTS_X 15      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   //#define UBL_HILBERT_CURVE       // Use Hilbert distribution for less travel when probing multiple points
@@ -1679,7 +1679,7 @@
  * Add a bed leveling sub-menu for ABL or MBL.
  * Include a guided procedure if manual probing is enabled.
  */
-//#define LCD_BED_LEVELING
+#define LCD_BED_LEVELING
 
 #if ENABLED(LCD_BED_LEVELING)
   #define MESH_EDIT_Z_STEP  0.025 // (mm) Step size while manually probing Z axis.
@@ -1688,7 +1688,7 @@
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
-//#define LEVEL_BED_CORNERS
+#define LEVEL_BED_CORNERS
 
 #if ENABLED(LEVEL_BED_CORNERS)
   #define LEVEL_CORNERS_INSET_LFRB { 30, 30, 30, 30 } // (mm) Left, Front, Right, Back insets
@@ -1885,10 +1885,10 @@
 #define PREHEAT_4_TEMP_BED     70
 #define PREHEAT_4_FAN_SPEED   255 // Value from 0 to 255
 
-//#define PREHEAT_5_LABEL       "TPU"
-//#define PREHEAT_5_TEMP_HOTEND 230
-//#define PREHEAT_5_TEMP_BED     60
-//#define PREHEAT_5_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_5_LABEL       "TPU"
+#define PREHEAT_5_TEMP_HOTEND 230
+#define PREHEAT_5_TEMP_BED     60
+#define PREHEAT_5_FAN_SPEED   255 // Value from 0 to 255
 
 /**
  * Nozzle Park
