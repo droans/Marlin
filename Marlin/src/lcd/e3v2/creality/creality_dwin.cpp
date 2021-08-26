@@ -87,9 +87,9 @@
 
 #define MACHINE_SIZE STRINGIFY(X_BED_SIZE) "x" STRINGIFY(Y_BED_SIZE) "x" STRINGIFY(Z_MAX_POS)
 
-#define CORP_WEBSITE_E "github.com/Jyers"
+#define CORP_WEBSITE_E "github.com/droans"
 
-#define BUILD_NUMBER "1.3.5"
+#define BUILD_NUMBER "1.3.5_MS"
 
 #define DWIN_FONT_MENU font8x16
 #define DWIN_FONT_STAT font10x20
